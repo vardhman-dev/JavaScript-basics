@@ -31,14 +31,22 @@
         let str1 = prompt("Enter a sring", "abcd");
 
         function capitalize(str){
-            let firstChar = str.at(0).toUpperCase()
+            let firstChar = str.at(0).toUpperCase();
             let remainingString = str.substr(1).toLowerCase();
             return firstChar + remainingString; 
         }
 
         alert(capitalize(str1));
 
-        
+        // Q4.Write a function called lastLetter that takes a string and returns the very last letter of that string.
+
+        let str2 = prompt("Enter a sring", "xyz");
+
+        function lastLetter(str){
+            return str.at(str.length - 1);
+        }
+
+        alert(lastLetter(str2));
     </script>
 </body>
 </html>
