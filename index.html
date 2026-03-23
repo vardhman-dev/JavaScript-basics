@@ -25,6 +25,20 @@
         }
 
         alert(multiply(firstNumber, secondNumber));
+
+        // Q3.Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+
+        let str1 = prompt("Enter a sring", "abcd");
+
+        function capitalize(str){
+            let firstChar = str.at(0).toUpperCase()
+            let remainingString = str.substr(1).toLowerCase();
+            return firstChar + remainingString; 
+        }
+
+        alert(capitalize(str1));
+
+        
     </script>
 </body>
 </html>
