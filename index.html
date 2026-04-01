@@ -8,45 +8,69 @@
 <body>
     <script>
         // Q1.Write a function called add7 that takes one number and returns that number + 7.
-        let num1 = +prompt("Enter a number", 0);
+        // let num1 = +prompt("Enter a number", 0);
 
-        function add7(num){
-            return num + 7;
-        }
+        // function add7(num){
+        //     return num + 7;
+        // }
     
-        alert(add7(num1));
+        // alert(add7(num1));
 
         // Q2.Write a function called multiply that takes 2 numbers and returns their product.
-        let firstNumber = +prompt("Enter the first number", 0);
-        let secondNumber = +prompt("Enter the second number", 0);
+        // let firstNumber = +prompt("Enter the first number", 0);
+        // let secondNumber = +prompt("Enter the second number", 0);
 
-        function multiply(num_1, num_2){
-            return num_1*num_2;
-        }
+        // function multiply(num_1, num_2){
+        //     return num_1*num_2;
+        // }
 
-        alert(multiply(firstNumber, secondNumber));
+        // alert(multiply(firstNumber, secondNumber));
 
         // Q3.Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
 
-        let str1 = prompt("Enter a sring", "abcd");
+        // let str1 = prompt("Enter a sring", "abcd");
 
-        function capitalize(str){
-            let firstChar = str.at(0).toUpperCase();
-            let remainingString = str.substr(1).toLowerCase();
-            return firstChar + remainingString; 
-        }
+        // function capitalize(str){
+        //     let firstChar = str.at(0).toUpperCase();
+        //     let remainingString = str.substr(1).toLowerCase();
+        //     return firstChar + remainingString; 
+        // }
 
-        alert(capitalize(str1));
+        // alert(capitalize(str1));
 
         // Q4.Write a function called lastLetter that takes a string and returns the very last letter of that string.
 
-        let str2 = prompt("Enter a sring", "xyz");
+        // let str2 = prompt("Enter a sring", "xyz");
 
-        function lastLetter(str){
-            return str.at(str.length - 1);
+        // function lastLetter(str){
+        //     return str.at(str.length - 1);
+        // }
+
+        // alert(lastLetter(str2));
+
+        // Q5.Write the code which outputs prime numbers in the interval from 2 to n
+        // Algorithm : for every number check if it is prime 
+        let num = +prompt("Enter a number")
+        
+        function isPrime(number){
+            let ans = true
+            for(let i = 2; i < number; i++){
+                if(number % i == 0){
+                    ans = false
+                    break;
+                }
+            }
+            return ans
+        }
+        let counter = 2
+        while(counter <= num){
+            if(isPrime(counter)){
+                alert(counter)
+            }
+            counter++;
         }
 
-        alert(lastLetter(str2));
+        
     </script>
 </body>
 </html>
